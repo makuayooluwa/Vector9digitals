@@ -18,9 +18,9 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
           {/* Agency Brand Identity & Direct Contact */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex flex-col">
-              <span className="font-display font-bold text-2xl tracking-tight text-[#F5F5F2] flex items-center gap-2">
+              <span className="font-display font-bold text-2xl tracking-tight text-[#FFFFFF] flex items-center gap-2">
                 VECTOR9 DIGITALS
-                <span className="w-2 h-2 rounded-full bg-[#6C63FF]" />
+                <span className="w-2 h-2 rounded-full bg-white" />
               </span>
               <span className="text-xs font-mono uppercase tracking-[0.2em] text-[#666666] mt-0.5">
                 Shopify & E-commerce Agency
@@ -34,16 +34,16 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
               <a
                 href="mailto:vector9digitals@gmail.com"
                 aria-label="Email Vector9 Digitals"
-                className="font-mono text-xs sm:text-sm text-[#E0E0E0] hover:text-[#6C63FF] transition-colors flex items-center gap-2"
+                className="font-mono text-xs sm:text-sm text-[#E0E0E0] hover:text-white transition-colors flex items-center gap-2"
               >
                 <span>vector9digitals@gmail.com</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#6C63FF]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-white" />
               </a>
             </div>
 
             <div className="pt-2">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-mono text-[#D1CFFD] bg-[#6C63FF]/10 border border-[#6C63FF]/20">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#6C63FF] animate-pulse" />
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded text-xs font-mono text-white bg-[#181818] border border-[#333333]">
+                <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
                 Accepting select client partnerships
               </span>
             </div>
@@ -51,42 +51,42 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
 
           {/* Navigation Links */}
           <div className="md:col-span-3 space-y-4">
-            <h5 className="text-xs font-mono tracking-widest uppercase text-[#F5F5F2]">Navigation</h5>
+            <h5 className="text-xs font-mono tracking-widest uppercase text-[#FFFFFF]">Navigation</h5>
             <ul className="space-y-2.5 text-sm">
               <li>
                 <button
                   onClick={() => navigate('/work')}
-                  className="hover:text-[#6C63FF] transition-colors flex items-center gap-1 group text-left"
+                  className="hover:text-white transition-colors flex items-center gap-1 group text-left"
                 >
                   <span>Selected Work</span>
-                  <span className="text-[10px] font-mono text-[#555555] group-hover:text-[#6C63FF]">01</span>
+                  <span className="text-[10px] font-mono text-[#555555] group-hover:text-white">01</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/services')}
-                  className="hover:text-[#6C63FF] transition-colors flex items-center gap-1 group text-left"
+                  className="hover:text-white transition-colors flex items-center gap-1 group text-left"
                 >
                   <span>Services & Capabilities</span>
-                  <span className="text-[10px] font-mono text-[#555555] group-hover:text-[#6C63FF]">02</span>
+                  <span className="text-[10px] font-mono text-[#555555] group-hover:text-white">02</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/about')}
-                  className="hover:text-[#6C63FF] transition-colors flex items-center gap-1 group text-left"
+                  className="hover:text-white transition-colors flex items-center gap-1 group text-left"
                 >
                   <span>About Vector9</span>
-                  <span className="text-[10px] font-mono text-[#555555] group-hover:text-[#6C63FF]">03</span>
+                  <span className="text-[10px] font-mono text-[#555555] group-hover:text-white">03</span>
                 </button>
               </li>
               <li>
                 <button
                   onClick={() => navigate('/contact')}
-                  className="hover:text-[#6C63FF] transition-colors flex items-center gap-1 group text-left"
+                  className="hover:text-white transition-colors flex items-center gap-1 group text-left"
                 >
                   <span>Start a Project</span>
-                  <ArrowUpRight className="w-3 h-3 text-[#6C63FF]" />
+                  <ArrowUpRight className="w-3 h-3 text-white" />
                 </button>
               </li>
             </ul>
@@ -94,12 +94,12 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
 
           {/* Featured Studies */}
           <div className="md:col-span-2 space-y-4">
-            <h5 className="text-xs font-mono tracking-widest uppercase text-[#F5F5F2]">Work</h5>
+            <h5 className="text-xs font-mono tracking-widest uppercase text-[#FFFFFF]">Work</h5>
             <ul className="space-y-2.5 text-sm">
               <li>
                 <button
                   onClick={() => navigate('/work/habitat-renewal')}
-                  className="hover:text-[#6C63FF] transition-colors text-left"
+                  className="hover:text-white transition-colors text-left"
                 >
                   <strong className="block text-white text-xs font-medium">Habitat Renewal</strong>
                   <span className="text-xs text-[#666666]">Shopify · SEO · GMC</span>
@@ -108,7 +108,7 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
               <li>
                 <button
                   onClick={() => navigate('/work/gandm-tech')}
-                  className="hover:text-[#6C63FF] transition-colors text-left"
+                  className="hover:text-white transition-colors text-left"
                 >
                   <strong className="block text-white text-xs font-medium">G & M Tech</strong>
                   <span className="text-xs text-[#666666]">Storefront · CRO · SEO</span>
@@ -119,7 +119,7 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
 
           {/* Official Social Links */}
           <div className="md:col-span-2 space-y-4">
-            <h5 className="text-xs font-mono tracking-widest uppercase text-[#F5F5F2]">Connect</h5>
+            <h5 className="text-xs font-mono tracking-widest uppercase text-[#FFFFFF]">Connect</h5>
             <ul className="space-y-2.5 text-sm font-mono text-xs">
               <li>
                 <a
@@ -127,10 +127,10 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Vector9 Digitals on Instagram"
-                  className="text-[#CCCCCC] hover:text-[#6C63FF] transition-colors inline-flex items-center gap-1.5"
+                  className="text-[#CCCCCC] hover:text-white transition-colors inline-flex items-center gap-1.5"
                 >
                   <span>Instagram</span>
-                  <ArrowUpRight className="w-3 h-3 text-[#6C63FF]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-white" />
                 </a>
               </li>
               <li>
@@ -139,17 +139,17 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Vector9 Digitals on X"
-                  className="text-[#CCCCCC] hover:text-[#6C63FF] transition-colors inline-flex items-center gap-1.5"
+                  className="text-[#CCCCCC] hover:text-white transition-colors inline-flex items-center gap-1.5"
                 >
                   <span>X</span>
-                  <ArrowUpRight className="w-3 h-3 text-[#6C63FF]" />
+                  <ArrowUpRight className="w-3.5 h-3.5 text-white" />
                 </a>
               </li>
               <li className="pt-1">
                 <a
                   href="mailto:vector9digitals@gmail.com"
                   aria-label="Email Vector9 Digitals"
-                  className="text-[#888888] hover:text-[#6C63FF] transition-colors break-all block"
+                  className="text-[#888888] hover:text-white transition-colors break-all block"
                 >
                   Email
                 </a>
@@ -168,7 +168,7 @@ export const Footer: React.FC<FooterProps> = ({ navigate }) => {
             <span className="text-[#444444]">V9 / PRODUCTION PORTFOLIO</span>
             <button
               onClick={scrollToTop}
-              className="text-[#9A9A9A] hover:text-[#6C63FF] transition-colors"
+              className="text-[#9A9A9A] hover:text-white transition-colors"
             >
               Back to top ↑
             </button>

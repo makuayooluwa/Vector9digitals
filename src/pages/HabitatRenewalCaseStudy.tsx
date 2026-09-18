@@ -25,7 +25,7 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
         <div className="flex items-center justify-between border-b border-[#222222] pb-4 text-xs font-mono text-[#888888]">
           <button
             onClick={() => navigate('/work')}
-            className="hover:text-[#6C63FF] transition-colors flex items-center gap-2 group"
+            className="hover:text-white transition-colors flex items-center gap-2 group"
           >
             <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
             <span>Back to Selected Work</span>
@@ -34,7 +34,7 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
           <div className="flex items-center gap-3">
             <span>PROJECT 01 / 02</span>
             <span className="text-[#444444]">|</span>
-            <span className="text-[#A5A0FF]">FEATURED CASE STUDY</span>
+            <span className="text-white">FEATURED CASE STUDY</span>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
       <section className="max-w-7xl mx-auto px-6 md:px-12 mb-16 md:mb-24">
         <div className="space-y-6 max-w-4xl">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="text-xs font-mono px-3 py-1 rounded bg-[#1C1A17] border border-[#3D2E20] text-[#E5A93C] uppercase tracking-wider">
+            <span className="text-xs font-mono px-3 py-1 rounded bg-[#181818] border border-[#333333] text-white uppercase tracking-wider">
               HABITAT RENEWAL
             </span>
             <span className="text-xs font-mono text-[#777777]">
@@ -54,10 +54,10 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-display uppercase tracking-tight text-white leading-[1.05]">
             FROM STOREFRONT <br />
             OPTIMIZATION TO <br />
-            <span className="text-[#6C63FF]">PRODUCT VISIBILITY.</span>
+            <span className="text-white">PRODUCT VISIBILITY.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-[#9A9A9A] leading-relaxed max-w-3xl">
+          <p className="text-lg sm:text-xl text-[#888888] leading-relaxed max-w-3xl">
             Habitat Renewal is a furniture and home décor e-commerce store. The work focused on improving the digital storefront, product and collection SEO, content structure and Google Merchant Center product visibility.
           </p>
 
@@ -66,21 +66,21 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
               href="https://habitatrenewal.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white hover:bg-[#EAEAEA] text-black font-semibold font-display text-xs tracking-wider uppercase transition-all"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-white hover:bg-black text-black hover:text-white border border-white font-semibold font-display text-xs tracking-wider uppercase transition-all"
             >
               <span>View Live Store</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
 
-            <div className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#141414] border border-[#262626] text-xs font-mono text-[#BBBBBB]">
-              <span className="w-2 h-2 rounded-full bg-[#27C93F]" />
+            <div className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#111111] border border-[#222222] text-xs font-mono text-[#D4D4D4]">
+              <span className="w-2 h-2 rounded-full bg-white" />
               <span>Primary Win: 0 → 57,679 Products Approved in GMC</span>
             </div>
           </div>
         </div>
 
         {/* Hero Visual Banner */}
-        <div className="mt-12 rounded-2xl border border-[#2A2420] overflow-hidden bg-[#16120E] shadow-2xl">
+        <div className="mt-12 rounded-2xl border border-[#222222] overflow-hidden bg-black shadow-2xl">
           <BrowserFrame url="habitatrenewal.com" title="Habitat Renewal Desktop Storefront">
             <div className="relative aspect-[16/9] sm:aspect-[21/9] overflow-hidden">
               <img
@@ -90,7 +90,7 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 md:p-10">
-                <span className="text-xs font-mono text-[#E5A93C] uppercase tracking-widest mb-1">
+                <span className="text-xs font-mono text-white uppercase tracking-widest mb-1">
                   E-Commerce Brand Experience
                 </span>
                 <h3 className="font-display text-lg sm:text-2xl font-bold text-white max-w-2xl">
@@ -108,7 +108,7 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
           
           <div className="lg:col-span-4">
             <div className="sticky top-28 space-y-4">
-              <span className="text-xs font-mono text-[#6C63FF] tracking-widest uppercase block">
+              <span className="text-xs font-mono text-[#888888] tracking-widest uppercase block">
                 01 // OVERVIEW & SCOPE
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-display uppercase tracking-tight text-white">
@@ -123,8 +123,8 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
             </div>
           </div>
 
-          <div className="lg:col-span-8 space-y-6 text-base text-[#9A9A9A] leading-relaxed">
-            <p className="text-lg text-[#F5F5F2]">
+          <div className="lg:col-span-8 space-y-6 text-base text-[#888888] leading-relaxed">
+            <p className="text-lg text-[#FFFFFF]">
               Habitat Renewal required a comprehensive digital overhaul to bridge an inspiring organic home décor brand with dependable technical e-commerce foundations.
             </p>
 
@@ -154,9 +154,9 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-[#181111] border border-[#381C1C]">
-                <strong className="block text-[#FF6961] text-sm font-semibold mb-2">Google Merchant Center Block</strong>
-                <p className="text-xs text-[#FFB3B0]">
+              <div className="p-5 rounded-xl bg-[#181818] border border-[#333333]">
+                <strong className="block text-white text-sm font-semibold mb-2">Google Merchant Center Block</strong>
+                <p className="text-xs text-[#888888]">
                   Most critically, Google Merchant Center had suspended the feed: 0 approved products out of 75,904 SKUs, cutting off Google Shopping traffic entirely.
                 </p>
               </div>
@@ -170,13 +170,13 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
       {/* THE STOREFRONT */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 py-16 border-t border-[#1C1C1C]">
         <div className="mb-12">
-          <span className="text-xs font-mono text-[#6C63FF] tracking-widest uppercase block mb-2">
+          <span className="text-xs font-mono text-[#888888] tracking-widest uppercase block mb-2">
             02 // FRONTEND EXPERIENCE
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold font-display uppercase tracking-tight text-white mb-4">
             THE STOREFRONT
           </h2>
-          <p className="text-base text-[#9A9A9A] max-w-3xl leading-relaxed">
+          <p className="text-base text-[#888888] max-w-3xl leading-relaxed">
             We redesigned key customer touchpoints across the store: an editorial homepage that establishes brand identity, structured collection pages for smooth browsing, and informative product detail pages designed to build buying confidence.
           </p>
         </div>
@@ -187,47 +187,47 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
           {/* Collection Experience Viewport */}
           <div className="lg:col-span-7">
             <BrowserFrame url="habitatrenewal.com/collections/accent-furniture" title="Collection Browsing Experience">
-              <div className="bg-[#12100E] p-4 sm:p-6 space-y-4">
-                <div className="flex items-center justify-between border-b border-[#2A2420] pb-3 text-xs">
+              <div className="bg-[#111111] p-4 sm:p-6 space-y-4">
+                <div className="flex items-center justify-between border-b border-[#222222] pb-3 text-xs">
                   <div className="flex items-center gap-2">
-                    <span className="px-3 py-1 rounded bg-[#3D2E20] text-[#E5A93C] font-mono text-[11px]">FILTER +</span>
-                    <span className="px-3 py-1 rounded bg-[#241C16] text-[#A09080] font-mono text-[11px]">SORT BY v</span>
+                    <span className="px-3 py-1 rounded bg-[#222222] text-white border border-[#333333] font-mono text-[11px]">FILTER +</span>
+                    <span className="px-3 py-1 rounded bg-[#181818] text-[#888888] font-mono text-[11px]">SORT BY v</span>
                   </div>
                   <span className="text-[#888888] font-mono text-[11px]">299 products</span>
                 </div>
 
                 {/* Grid of actual items from screenshot */}
                 <div className="grid grid-cols-2 gap-3">
-                  <div className="p-3 rounded-lg bg-[#1A1613] border border-[#2E241E] space-y-2">
-                    <div className="relative aspect-square rounded bg-[#241E1A] overflow-hidden flex items-center justify-center text-2xl">
+                  <div className="p-3 rounded-lg bg-[#181818] border border-[#222222] space-y-2">
+                    <div className="relative aspect-square rounded bg-[#111111] overflow-hidden flex items-center justify-center text-2xl">
                       🪑
-                      <span className="absolute top-1 left-1 bg-[#B24522] text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
+                      <span className="absolute top-1 left-1 bg-[#333333] text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
                         -$128.00
                       </span>
                     </div>
                     <div>
                       <h4 className="text-xs font-medium text-white truncate">Swivel Accent Chair Faux Leather</h4>
-                      <div className="text-[11px] font-mono text-[#E5A93C]">$637.99 <span className="line-through text-[#666666]">$765.00</span></div>
+                      <div className="text-[11px] font-mono text-white">$637.99 <span className="line-through text-[#666666]">$765.00</span></div>
                     </div>
                   </div>
 
-                  <div className="p-3 rounded-lg bg-[#1A1613] border border-[#2E241E] space-y-2">
-                    <div className="relative aspect-square rounded bg-[#241E1A] overflow-hidden flex items-center justify-center text-2xl">
+                  <div className="p-3 rounded-lg bg-[#181818] border border-[#222222] space-y-2">
+                    <div className="relative aspect-square rounded bg-[#111111] overflow-hidden flex items-center justify-center text-2xl">
                       📚
-                      <span className="absolute top-1 left-1 bg-[#B24522] text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
+                      <span className="absolute top-1 left-1 bg-[#333333] text-white text-[9px] font-bold px-1.5 py-0.5 rounded">
                         -$500.00
                       </span>
                     </div>
                     <div>
                       <h4 className="text-xs font-medium text-white truncate">Vyre 71" Tall Farmhouse Bookshelves</h4>
-                      <div className="text-[11px] font-mono text-[#E5A93C]">$899.00 <span className="line-through text-[#666666]">$1,399.00</span></div>
+                      <div className="text-[11px] font-mono text-white">$899.00 <span className="line-through text-[#666666]">$1,399.00</span></div>
                     </div>
                   </div>
                 </div>
 
-                <div className="p-3 rounded bg-[#1C1814] text-[11px] text-[#A09080] flex items-center justify-between">
+                <div className="p-3 rounded bg-[#141414] text-[11px] text-[#888888] flex items-center justify-between">
                   <span>Showing curated seating & storage taxonomy</span>
-                  <span className="text-[#A5A0FF] font-mono">Faceted Filtering Active</span>
+                  <span className="text-white font-mono">Faceted Filtering Active</span>
                 </div>
               </div>
             </BrowserFrame>
@@ -236,15 +236,15 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
           {/* Product Detail Page Viewport */}
           <div className="lg:col-span-5">
             <BrowserFrame url="habitatrenewal.com/products/modern-beige-velvet-armchair" title="Product Detail Page">
-              <div className="bg-[#12100E] p-4 sm:p-5 space-y-4">
-                <div className="relative aspect-square rounded-lg overflow-hidden border border-[#2E241E]">
+              <div className="bg-[#111111] p-4 sm:p-5 space-y-4">
+                <div className="relative aspect-square rounded-lg overflow-hidden border border-[#222222]">
                   <img
                     src="/assets/projects/habitat-armchair.jpg"
                     alt="Beige Velvet Arm Chair with Gold Metal Accent"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-2 left-2 bg-[#B24522] text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                  <div className="absolute top-2 left-2 bg-[#333333] text-white text-[10px] font-bold px-2 py-0.5 rounded">
                     -28% OFF
                   </div>
                 </div>
@@ -255,17 +255,17 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
                     BEIGE VELVET ARM CHAIR WITH GOLD METAL ACCENT
                   </h4>
                   <div className="flex items-center gap-2">
-                    <span className="text-base font-bold font-mono text-[#E5A93C]">$308.00</span>
+                    <span className="text-base font-bold font-mono text-white">$308.00</span>
                     <span className="text-xs font-mono text-[#666666] line-through">$428.00</span>
                   </div>
-                  <p className="text-[10px] text-[#9A9A9A]">
+                  <p className="text-[10px] text-[#888888]">
                     or 4 installments of $27.80/mo with <strong className="text-white">Shop Pay</strong>
                   </p>
                 </div>
 
-                <div className="pt-2 border-t border-[#2A2420] flex items-center justify-between text-xs">
+                <div className="pt-2 border-t border-[#222222] flex items-center justify-between text-xs">
                   <span className="text-[#888888]">Color: <strong>BEIGE</strong></span>
-                  <span className="text-[#27C93F] font-mono text-[11px]">In Stock · Ready to Ship</span>
+                  <span className="text-white font-mono text-[11px]">In Stock · Ready to Ship</span>
                 </div>
               </div>
             </BrowserFrame>
@@ -277,13 +277,13 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
       {/* SEO & CONTENT STRATEGY */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 py-16 border-t border-[#1C1C1C]">
         <div className="mb-12">
-          <span className="text-xs font-mono text-[#6C63FF] tracking-widest uppercase block mb-2">
+          <span className="text-xs font-mono text-[#888888] tracking-widest uppercase block mb-2">
             03 // EDITORIAL & SEARCH STRATEGY
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold font-display uppercase tracking-tight text-white mb-4">
             SEO & CONTENT CREATION
           </h2>
-          <p className="text-base text-[#9A9A9A] max-w-3xl leading-relaxed">
+          <p className="text-base text-[#888888] max-w-3xl leading-relaxed">
             To capture high-intent non-branded organic traffic, we produced search-optimized editorial articles and structured collection metadata with 100/100 Smart SEO audit ratings.
           </p>
         </div>
@@ -297,14 +297,14 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
             {HABITAT_ARTICLES.map((art, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-xl bg-[#0E0E0E] border border-[#222222] hover:border-[#383838] transition-all flex flex-col justify-between"
+                className="p-6 rounded-xl bg-[#111111] border border-[#222222] hover:border-[#383838] transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#1C1C1C] text-[#E5A93C] uppercase">
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-[#1C1C1C] text-white uppercase border border-[#333333]">
                       {art.type}
                     </span>
-                    <span className="text-xs font-mono font-bold text-[#27C93F] bg-[#27C93F]/10 px-2 py-0.5 rounded border border-[#27C93F]/30">
+                    <span className="text-xs font-mono font-bold text-white bg-[#181818] px-2 py-0.5 rounded border border-[#333333]">
                       Score {art.score}
                     </span>
                   </div>
@@ -314,7 +314,7 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
                 </div>
                 <div className="pt-4 border-t border-[#1A1A1A] text-xs font-mono text-[#777777]">
                   <span>Focus Keyword: </span>
-                  <strong className="text-[#AAAAAA]">{art.focusKeyword}</strong>
+                  <strong className="text-white">{art.focusKeyword}</strong>
                 </div>
               </div>
             ))}
@@ -341,13 +341,13 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
       {/* GOOGLE MERCHANT CENTER (PRIMARY RESULT) */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 py-16 border-t border-[#1C1C1C] bg-[#090909]">
         <div className="mb-12">
-          <span className="text-xs font-mono text-[#6C63FF] tracking-widest uppercase block mb-2">
+          <span className="text-xs font-mono text-[#888888] tracking-widest uppercase block mb-2">
             04 // TECHNICAL RESOLUTION & SCALE
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold font-display uppercase tracking-tight text-white mb-4">
             GOOGLE MERCHANT CENTER OPTIMIZATION
           </h2>
-          <p className="text-base text-[#9A9A9A] max-w-3xl leading-relaxed">
+          <p className="text-base text-[#888888] max-w-3xl leading-relaxed">
             I worked through product visibility and Merchant Center issues affecting the store's product listings, helping move the account from having no approved products to 57,679 approved products.
           </p>
         </div>
@@ -382,8 +382,8 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
 
       {/* THE OUTCOME */}
       <section className="max-w-7xl mx-auto px-6 md:px-12 py-16 border-t border-[#1C1C1C]">
-        <div className="p-8 sm:p-12 rounded-2xl bg-gradient-to-br from-[#121212] via-[#0E0E0E] to-[#0A0A0A] border border-[#262626]">
-          <span className="text-xs font-mono text-[#6C63FF] tracking-widest uppercase block mb-3">
+        <div className="p-8 sm:p-12 rounded-2xl bg-[#111111] border border-[#222222]">
+          <span className="text-xs font-mono text-[#888888] tracking-widest uppercase block mb-3">
             05 // PROJECT SUMMARY
           </span>
           <h2 className="text-2xl sm:text-4xl font-bold font-display uppercase tracking-tight text-white mb-6">
@@ -393,30 +393,30 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm text-[#CCCCCC]">
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#6C63FF] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <span>A more cohesive and refined Shopify storefront experience that elevates customer perception.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#6C63FF] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <span>Structured collection taxonomy and faceted filtering across hundreds of furniture and decor items.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#6C63FF] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <span>High-converting product detail pages with transparent pricing, installments, and material clarity.</span>
               </li>
             </ul>
 
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#6C63FF] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <span>Search-focused content strategy driving organic discovery for high-intent furniture keywords.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#6C63FF] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <span>Perfect 100/100 Smart SEO scores across articles, collections, and catalog metadata.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#6C63FF] shrink-0 mt-0.5" />
+                <CheckCircle2 className="w-5 h-5 text-white shrink-0 mt-0.5" />
                 <span>Resolved major Google Merchant Center blockers, unlocking 57,679 products for Google Shopping.</span>
               </li>
             </ul>
@@ -425,15 +425,15 @@ export const HabitatRenewalCaseStudy: React.FC<CaseStudyProps> = ({ navigate }) 
           <div className="mt-10 pt-8 border-t border-[#222222] flex flex-col sm:flex-row items-center justify-between gap-4">
             <button
               onClick={() => navigate('/work/gandm-tech')}
-              className="flex items-center gap-2 text-sm font-mono text-[#F5F5F2] hover:text-[#6C63FF] transition-colors"
+              className="flex items-center gap-2 text-sm font-mono text-[#F5F5F2] hover:text-white transition-colors"
             >
               <span>Next Project: G & M Tech (Futuristic Shopify & CRO)</span>
-              <ChevronRight className="w-4 h-4 text-[#6C63FF]" />
+              <ChevronRight className="w-4 h-4 text-white" />
             </button>
 
             <button
               onClick={() => navigate('/contact')}
-              className="px-6 py-3 rounded bg-white hover:bg-[#EAEAEA] text-black font-semibold font-display text-xs tracking-wider uppercase transition-all"
+              className="px-6 py-3 rounded bg-white hover:bg-black text-black hover:text-white border border-white font-semibold font-display text-xs tracking-wider uppercase transition-all"
             >
               Start a similar project ↗
             </button>

@@ -35,28 +35,28 @@ export const ContactSection: React.FC = () => {
           {/* Left Column: Heading, Context & Expectations */}
           <div className="lg:col-span-5 space-y-8">
             <div>
-              <div className="flex items-center gap-2 text-xs font-mono text-[#6C63FF] tracking-widest uppercase mb-3">
+              <div className="flex items-center gap-2 text-xs font-mono text-[#888888] tracking-widest uppercase mb-3">
                 <span>INQUIRIES</span>
                 <span>·</span>
                 <span>START A PROJECT</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold font-display uppercase tracking-tight text-[#F5F5F2] leading-[1.08]">
+              <h2 className="text-3xl md:text-5xl font-bold font-display uppercase tracking-tight text-[#FFFFFF] leading-[1.08]">
                 HAVE SOMETHING <br />
                 WORTH BUILDING?
               </h2>
             </div>
 
-            <p className="text-base text-[#9A9A9A] leading-relaxed">
+            <p className="text-base text-[#888888] leading-relaxed">
               Tell us about your store, product or digital goals. We review all inquiries carefully and provide direct, pragmatic feedback on scope and feasibility.
             </p>
 
             <div className="space-y-4 pt-4 border-t border-[#1C1C1C] text-xs font-mono text-[#888888]">
               <div className="flex items-center gap-3">
-                <Clock className="w-4 h-4 text-[#6C63FF]" />
+                <Clock className="w-4 h-4 text-white" />
                 <span>RESPONSE TIME: WITHIN 24 BUSINESS HOURS</span>
               </div>
               <div className="flex items-center gap-3">
-                <Shield className="w-4 h-4 text-[#6C63FF]" />
+                <Shield className="w-4 h-4 text-white" />
                 <span>NDA & CONFIDENTIALITY PROTECTED</span>
               </div>
             </div>
@@ -70,10 +70,10 @@ export const ContactSection: React.FC = () => {
                 <a
                   href="mailto:vector9digitals@gmail.com"
                   aria-label="Send email to vector9digitals@gmail.com"
-                  className="text-base sm:text-lg font-mono font-medium text-[#F5F5F2] hover:text-[#6C63FF] transition-colors flex items-center gap-2"
+                  className="text-base sm:text-lg font-mono font-medium text-white hover:text-[#D4D4D4] transition-colors flex items-center gap-2"
                 >
                   <span>vector9digitals@gmail.com</span>
-                  <ArrowUpRight className="w-4 h-4 text-[#6C63FF]" />
+                  <ArrowUpRight className="w-4 h-4 text-white" />
                 </a>
               </div>
 
@@ -87,20 +87,20 @@ export const ContactSection: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Vector9 Digitals on Instagram"
-                    className="text-[#CCCCCC] hover:text-[#6C63FF] transition-colors inline-flex items-center gap-1.5"
+                    className="text-[#CCCCCC] hover:text-white transition-colors inline-flex items-center gap-1.5"
                   >
                     <span>Instagram</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-[#6C63FF]" />
+                    <ArrowUpRight className="w-3.5 h-3.5 text-white" />
                   </a>
                   <a
                     href="https://x.com/vector9digitals"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Vector9 Digitals on X"
-                    className="text-[#CCCCCC] hover:text-[#6C63FF] transition-colors inline-flex items-center gap-1.5"
+                    className="text-[#CCCCCC] hover:text-white transition-colors inline-flex items-center gap-1.5"
                   >
                     <span>X</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-[#6C63FF]" />
+                    <ArrowUpRight className="w-3.5 h-3.5 text-white" />
                   </a>
                 </div>
               </div>
@@ -109,16 +109,16 @@ export const ContactSection: React.FC = () => {
 
           {/* Right Column: Contact Form */}
           <div className="lg:col-span-7">
-            <div className="rounded-2xl border border-[#222222] bg-[#0E0E0E] p-8 sm:p-10 shadow-2xl relative">
+            <div className="rounded-2xl border border-[#222222] bg-[#111111] p-8 sm:p-10 shadow-2xl relative">
               
               {submitted ? (
                 <div className="py-12 text-center space-y-6">
-                  <div className="w-16 h-16 rounded-full bg-[#6C63FF]/10 border border-[#6C63FF]/30 flex items-center justify-center mx-auto text-[#6C63FF]">
+                  <div className="w-16 h-16 rounded-full bg-[#181818] border border-[#333333] flex items-center justify-center mx-auto text-white">
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold font-display text-white">Inquiry Received</h3>
-                    <p className="text-sm text-[#9A9A9A] max-w-md mx-auto">
+                    <p className="text-sm text-[#888888] max-w-md mx-auto">
                       Thank you for reaching out, {formData.name || 'there'}. A Vector9 partner will review your project requirements and follow up within 24 hours.
                     </p>
                   </div>
@@ -134,7 +134,7 @@ export const ContactSection: React.FC = () => {
                         message: ''
                       });
                     }}
-                    className="text-xs font-mono text-[#6C63FF] hover:underline"
+                    className="text-xs font-mono text-white underline hover:text-[#D4D4D4]"
                   >
                     Submit another inquiry
                   </button>
@@ -155,7 +155,7 @@ export const ContactSection: React.FC = () => {
                         placeholder="Alex Morgan"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-[#6C63FF] transition-colors placeholder:text-[#555555]"
+                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-white transition-colors placeholder:text-[#555555]"
                       />
                     </div>
 
@@ -170,7 +170,7 @@ export const ContactSection: React.FC = () => {
                         placeholder="alex@company.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-[#6C63FF] transition-colors placeholder:text-[#555555]"
+                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-white transition-colors placeholder:text-[#555555]"
                       />
                     </div>
                   </div>
@@ -187,7 +187,7 @@ export const ContactSection: React.FC = () => {
                         placeholder="e.g. Modern Goods"
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-[#6C63FF] transition-colors placeholder:text-[#555555]"
+                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-white transition-colors placeholder:text-[#555555]"
                       />
                     </div>
 
@@ -199,7 +199,7 @@ export const ContactSection: React.FC = () => {
                         id="contact-project-type"
                         value={formData.projectType}
                         onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
-                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-[#6C63FF] transition-colors"
+                        className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-white transition-colors"
                       >
                         <option value="Shopify Store Design & Build">Shopify Store Design & Build</option>
                         <option value="Store Optimization / CRO">Store Optimization / CRO</option>
@@ -224,8 +224,8 @@ export const ContactSection: React.FC = () => {
                           onClick={() => setFormData({ ...formData, budget: tier })}
                           className={`py-2.5 px-3 text-xs font-mono rounded border transition-all ${
                             formData.budget === tier
-                              ? 'bg-[#6C63FF] text-white border-[#6C63FF] font-semibold shadow-sm'
-                              : 'bg-[#141414] text-[#888888] border-[#262626] hover:border-[#444444] hover:text-white'
+                              ? 'bg-white text-black border-white font-semibold shadow-sm'
+                              : 'bg-[#141414] text-[#888888] border-[#262626] hover:border-white hover:text-white'
                           }`}
                         >
                           {tier}
@@ -246,7 +246,7 @@ export const ContactSection: React.FC = () => {
                       placeholder="Share details about your store, timeline, current platform and target business outcomes..."
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-[#6C63FF] transition-colors placeholder:text-[#555555] resize-none"
+                      className="w-full px-4 py-3 rounded-lg bg-[#141414] border border-[#262626] text-white text-sm focus:outline-none focus:border-white transition-colors placeholder:text-[#555555] resize-none"
                     />
                   </div>
 
@@ -255,14 +255,14 @@ export const ContactSection: React.FC = () => {
                     id="contact-submit-btn"
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-4 rounded-lg bg-[#F5F5F2] hover:bg-white text-black font-semibold font-display text-sm tracking-wider uppercase flex items-center justify-center gap-2 transition-all hover:shadow-[0_0_25px_rgba(108,99,255,0.2)] disabled:opacity-50"
+                    className="group w-full py-4 rounded-lg bg-white hover:bg-black text-black hover:text-white border border-white font-semibold font-display text-sm tracking-wider uppercase flex items-center justify-center gap-2 transition-all disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <span>Sending inquiry...</span>
                     ) : (
                       <>
                         <span>Submit Project Brief</span>
-                        <ArrowUpRight className="w-4 h-4 text-[#6C63FF]" />
+                        <ArrowUpRight className="w-4 h-4 text-black group-hover:text-white transition-colors" />
                       </>
                     )}
                   </button>

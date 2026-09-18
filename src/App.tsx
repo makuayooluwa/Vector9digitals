@@ -58,7 +58,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] text-[#F5F5F2] flex flex-col font-sans selection:bg-[#6C63FF] selection:text-white">
+    <div className="min-h-screen bg-[#0A0A0A] text-[#F5F5F5] flex flex-col font-sans selection:bg-[#FFFFFF] selection:text-[#000000]">
       {/* Persistent Minimal Sticky Navigation */}
       <Navbar currentPath={currentPath} navigate={navigate} />
 

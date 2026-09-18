@@ -45,11 +45,11 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, navigate }) => {
           onClick={() => navigate('/')}
           className="group text-left flex flex-col focus:outline-none"
         >
-          <span className="font-display font-bold text-lg md:text-xl tracking-tight text-[#F5F5F2] flex items-center gap-1.5 group-hover:text-[#6C63FF] transition-colors">
+          <span className="font-display font-bold text-lg md:text-xl tracking-tight text-[#F5F5F5] flex items-center gap-1.5 group-hover:text-white transition-colors">
             VECTOR9
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#6C63FF]" />
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-white" />
           </span>
-          <span className="text-[10px] tracking-[0.25em] font-mono uppercase text-[#9A9A9A]">
+          <span className="text-[10px] tracking-[0.25em] font-mono uppercase text-[#888888]">
             DIGITALS
           </span>
         </button>
@@ -58,32 +58,40 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, navigate }) => {
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <button
             onClick={() => handleNavClick('/work', 'work')}
-            className={`transition-colors hover:text-[#6C63FF] ${
-              currentPath.startsWith('/work') ? 'text-[#6C63FF]' : 'text-[#9A9A9A]'
+            className={`transition-colors pb-0.5 ${
+              currentPath.startsWith('/work')
+                ? 'text-white border-b border-white'
+                : 'text-[#888888] hover:text-white'
             }`}
           >
             Work
           </button>
           <button
             onClick={() => handleNavClick('/services', 'services')}
-            className={`transition-colors hover:text-[#6C63FF] ${
-              currentPath === '/services' ? 'text-[#6C63FF]' : 'text-[#9A9A9A]'
+            className={`transition-colors pb-0.5 ${
+              currentPath === '/services'
+                ? 'text-white border-b border-white'
+                : 'text-[#888888] hover:text-white'
             }`}
           >
             Services
           </button>
           <button
             onClick={() => handleNavClick('/about', 'about')}
-            className={`transition-colors hover:text-[#6C63FF] ${
-              currentPath === '/about' ? 'text-[#6C63FF]' : 'text-[#9A9A9A]'
+            className={`transition-colors pb-0.5 ${
+              currentPath === '/about'
+                ? 'text-white border-b border-white'
+                : 'text-[#888888] hover:text-white'
             }`}
           >
             About
           </button>
           <button
             onClick={() => handleNavClick('/contact', 'contact')}
-            className={`transition-colors hover:text-[#6C63FF] ${
-              currentPath === '/contact' ? 'text-[#6C63FF]' : 'text-[#9A9A9A]'
+            className={`transition-colors pb-0.5 ${
+              currentPath === '/contact'
+                ? 'text-white border-b border-white'
+                : 'text-[#888888] hover:text-white'
             }`}
           >
             Contact
@@ -94,17 +102,17 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, navigate }) => {
         <div className="hidden md:flex items-center gap-4">
           <button
             onClick={() => handleNavClick('/contact', 'contact')}
-            className="group flex items-center gap-2 text-xs font-mono tracking-wider uppercase px-4 py-2.5 rounded border border-[#2A2A2A] hover:border-[#6C63FF] bg-[#111111] hover:bg-[#181824] text-[#F5F5F2] hover:text-white transition-all duration-200"
+            className="group flex items-center gap-2 text-xs font-mono tracking-wider uppercase px-4 py-2.5 rounded border border-[#333333] hover:border-white bg-[#111111] hover:bg-white text-white hover:text-black transition-all duration-200"
           >
             <span>Start a project</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-[#6C63FF] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            <ArrowUpRight className="w-3.5 h-3.5 text-white group-hover:text-black group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </button>
         </div>
 
         {/* Mobile Hamburger Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 text-[#F5F5F2] hover:text-[#6C63FF] focus:outline-none"
+          className="md:hidden p-2 text-[#F5F5F5] hover:text-white focus:outline-none"
           aria-label="Toggle Navigation Menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -117,40 +125,40 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPath, navigate }) => {
           <nav className="flex flex-col gap-4 text-lg font-display">
             <button
               onClick={() => handleNavClick('/work', 'work')}
-              className="text-left text-[#F5F5F2] hover:text-[#6C63FF] py-2 border-b border-[#1A1A1A] flex items-center justify-between"
+              className="text-left text-[#F5F5F5] hover:text-white py-2 border-b border-[#1A1A1A] flex items-center justify-between"
             >
               <span>Work</span>
-              <span className="text-xs font-mono text-[#777777]">V9 / 01</span>
+              <span className="text-xs font-mono text-[#888888]">V9 / 01</span>
             </button>
             <button
               onClick={() => handleNavClick('/services', 'services')}
-              className="text-left text-[#F5F5F2] hover:text-[#6C63FF] py-2 border-b border-[#1A1A1A] flex items-center justify-between"
+              className="text-left text-[#F5F5F5] hover:text-white py-2 border-b border-[#1A1A1A] flex items-center justify-between"
             >
               <span>Services</span>
-              <span className="text-xs font-mono text-[#777777]">V9 / 02</span>
+              <span className="text-xs font-mono text-[#888888]">V9 / 02</span>
             </button>
             <button
               onClick={() => handleNavClick('/about', 'about')}
-              className="text-left text-[#F5F5F2] hover:text-[#6C63FF] py-2 border-b border-[#1A1A1A] flex items-center justify-between"
+              className="text-left text-[#F5F5F5] hover:text-white py-2 border-b border-[#1A1A1A] flex items-center justify-between"
             >
               <span>About</span>
-              <span className="text-xs font-mono text-[#777777]">Agency</span>
+              <span className="text-xs font-mono text-[#888888]">Agency</span>
             </button>
             <button
               onClick={() => handleNavClick('/contact', 'contact')}
-              className="text-left text-[#F5F5F2] hover:text-[#6C63FF] py-2 border-b border-[#1A1A1A] flex items-center justify-between"
+              className="text-left text-[#F5F5F5] hover:text-white py-2 border-b border-[#1A1A1A] flex items-center justify-between"
             >
               <span>Contact</span>
-              <span className="text-xs font-mono text-[#777777]">Inquiry</span>
+              <span className="text-xs font-mono text-[#888888]">Inquiry</span>
             </button>
           </nav>
 
           <button
             onClick={() => handleNavClick('/contact', 'contact')}
-            className="flex items-center justify-center gap-2 text-sm font-mono tracking-wider uppercase py-3 rounded bg-white hover:bg-[#EAEAEA] text-black font-semibold transition-colors"
+            className="group flex items-center justify-center gap-2 text-sm font-mono tracking-wider uppercase py-3 rounded bg-white hover:bg-black text-black hover:text-white border border-white font-semibold transition-all"
           >
             <span>Start a project</span>
-            <ArrowUpRight className="w-4 h-4 text-[#6C63FF]" />
+            <ArrowUpRight className="w-4 h-4 text-black group-hover:text-white transition-colors" />
           </button>
         </div>
       )}
